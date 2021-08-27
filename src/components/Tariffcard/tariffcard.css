@@ -1,0 +1,57 @@
+/* .heading {
+    background-color: #329cab;
+    color: white;
+}
+
+.price {
+    background-color: #40c1d5;
+    color: white;
+}*/
+
+
+.card {
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding-top: 15px;
+}
+
+.listgroup {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: .25rem;
+}
+
+.listheading, .listprice, .listspeed, .listinformation {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+}
+
+.listheading, .listprice {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.listspeed {
+    background-color: #fafafa;
+}
+
+.listinformation {
+    background-color: #eeeeee;
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.selected {
+    transform: scale(1.1);
+}

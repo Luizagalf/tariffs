@@ -1,17 +1,11 @@
-.heading {
-    background-color: #329cab;
-    color: white;
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.price {
-    background-color: #40c1d5;
-    color: white;
-}
-
-.speed {
-    background-color: #eeeeee;
-}
-
-.information {
-    background-color: #fafafa;
+.col {
+    padding: 5px;
+    display: flex;
+    flex: 1 0;
+    justify-content: center;
 }

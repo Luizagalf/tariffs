@@ -1,18 +1,15 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, ListGroup } from 'react-bootstrap';
+import styles from './tariffcard.css';
 
-import styles from '../Tariffcards/tariffcards.css';
-
-function Tariffcard({ heading, price, speed, information }) {
+function Tariffcard({ heading, price, speed, information, headingcolor, pricecolor, isSelected }) {
     return (
-        <Card className="text-center">
-            <ListGroup variant="flush">
-                <ListGroup.Item className={heading}>{heading}</ListGroup.Item>
-                <ListGroup.Item className={price}>{price}</ListGroup.Item>
-                <ListGroup.Item className={speed}>{speed}</ListGroup.Item>
-                <ListGroup.Item className={information}>{information}</ListGroup.Item>
-            </ListGroup>
-        </Card>
+        <div className={`${styles.card} ${isSelected && styles.selected}`}>
+            <div className={styles.listgroup}>
+                <p className={styles.listheading} style={{ backgroundColor: '{headingcolor}' }}>{heading}</p>
+                <p className={styles.listprice} style={{ backgroundColor: '{pricecolor}' }}>{price}</p>
+                <p className={styles.listspeed}>{speed}</p>
+                <p className={styles.listinformation}>{information}</p>
+            </div>
+        </div >
     );
 }
 
