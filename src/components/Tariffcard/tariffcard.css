@@ -1,25 +1,13 @@
-/* .heading {
-    background-color: #329cab;
-    color: white;
-}
-
-.price {
-    background-color: #40c1d5;
-    color: white;
-}*/
-
-
 .card {
     position: relative;
     display: flex;
     text-align: center;
     flex-direction: column;
-    min-width: 0;
+    width: 230px;
     word-wrap: break-word;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid white;
     border-radius: .25rem;
-    padding-top: 15px;
 }
 
 .listgroup {
@@ -28,6 +16,34 @@
     padding-left: 0;
     margin-bottom: 0;
     border-radius: .25rem;
+}
+
+.blueheading {
+    background-color: #329cab;
+}
+.blueprice {
+    background-color: #40c1d5;
+}
+
+.greenheading {
+    background-color: #288670;
+}
+.greenprice {
+    background-color: #36ae8d;
+}
+
+.redheading {
+    background-color: #c4554e;
+}
+.redprice {
+    background-color: #f46a5f;
+}
+
+.blackheading {
+    background-color: black;
+}
+.blackprice {
+    background-color: #333a44;
 }
 
 .listheading, .listprice, .listspeed, .listinformation {
@@ -40,7 +56,12 @@
 }
 
 .listheading, .listprice {
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.listprice {
+    font-size: 2em;
 }
 
 .listspeed {
@@ -49,9 +70,11 @@
 
 .listinformation {
     background-color: #eeeeee;
-    border-top: 1px solid rgba(0,0,0,.125);
+    border-top: 1px solid white;
 }
 
 .selected {
     transform: scale(1.1);
+    box-shadow: 0px 0px 25px 5px #000;
 }
+

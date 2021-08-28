@@ -9,7 +9,7 @@ function Tariffcards() {
             {
                 jsonTariffs.map((tariff) =>
                     <div className={styles.col}>
-                        <Tariffcard heading={tariff.heading} price={tariff.price} speed={tariff.speed} information={tariff.information} headingcolor={tariff.headingcolor} pricecolor={tariff.pricecolor} isSelected={tariff.true}></Tariffcard>
+                        <Tariffcard id={tariff.id} heading={tariff.heading} price={tariff.price} speed={tariff.speed} information={tariff.information} isSelected={tariff.isSelected}></Tariffcard>
                     </div>
                 )
             }
