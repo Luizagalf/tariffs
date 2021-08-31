@@ -5,26 +5,26 @@ function Tariffcard({ id, heading, price, speed, information, isSelected }) {
     switch (id.length) {
         case 1:
             color = <div>
-                    <p className={`${styles.listheading} ${styles.blueheading}`}>{heading}</p>
-                    <p className={`${styles.listprice} ${styles.blueprice}`}>{price}</p>
-                </div>;
+                <p className={`${styles.listheading} ${styles.blueheading}`}>{heading}</p>
+                <p className={`${styles.listprice} ${styles.blueprice}`}>{price} руб/мес</p>
+            </div>;
             break;
         case 2:
             color = <div>
                 <p className={`${styles.listheading} ${styles.greenheading}`}>{heading}</p>
-                <p className={`${styles.listprice} ${styles.greenprice}`}>{price}</p>
+                <p className={`${styles.listprice} ${styles.greenprice}`}>{price} руб/мес</p>
             </div>;
             break;
         case 3:
             color = <div>
                 <p className={`${styles.listheading} ${styles.redheading}`}>{heading}</p>
-                <p className={`${styles.listprice} ${styles.redprice}`}>{price}</p>
+                <p className={`${styles.listprice} ${styles.redprice}`}>{price} руб/мес</p>
             </div>;
             break;
         case 4:
             color = <div>
                 <p className={`${styles.listheading} ${styles.blackheading}`}>{heading}</p>
-                <p className={`${styles.listprice} ${styles.blackprice}`}>{price}</p>
+                <p className={`${styles.listprice} ${styles.blackprice}`}>{price} руб/мес</p>
             </div>;
             break;
         default:

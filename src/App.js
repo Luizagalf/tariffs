@@ -4,9 +4,7 @@ import Tariffcards from './components/Tariffcards/Tariffcards';
 
 function App() {
   return (
-    <>
     <Tariffcards></Tariffcards>
-    </>
   );
 }
 
