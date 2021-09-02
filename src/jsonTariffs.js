@@ -17,8 +17,7 @@ const jsonTariffs = [{
     "heading": "Безлимитный 550",
     "price": 550,
     "speed": "до 100 Мбит/сек",
-    "information": "Объем включенного трафика не ограничен",
-    "isSelected": true
+    "information": "Объем включенного трафика не ограничен"
     },
     {
     "id": "1333",
